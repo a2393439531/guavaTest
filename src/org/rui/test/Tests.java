@@ -24,17 +24,21 @@ import com.google.common.cache.Weigher;
  * @author liangrui
  *
  */
-public class Tests {
+public class Tests
+{
 
 	/**
 	 * CacheLoader
 	 */
 	@Test
-	public void loadingCache() {
+	public void loadingCache()
+	{
 		LoadingCache<String, String> graphs = CacheBuilder.newBuilder()
-				.maximumSize(1000).build(new CacheLoader<String, String>() {
+				.maximumSize(1000).build(new CacheLoader<String, String>()
+				{
 					@Override
-					public String load(String arg0) throws Exception {
+					public String load(String arg0) throws Exception
+					{
 						return "get-if-absent-compute";
 						// return createExpensiveGraph("key");
 					}
@@ -43,7 +47,6 @@ public class Tests {
 
 		String resultVal = null;
 		try {
-
 			resultVal = graphs.get("key");
 		} catch (ExecutionException e) {
 			e.printStackTrace();
@@ -61,13 +64,16 @@ public class Tests {
 	 * 。缓存元素也可以通过Cache.put方法直接插入，但自动加载是首选的，因为它可以更容易地推断所有缓存内容的一致性。
 	 */
 	@Test
-	public void callablex() throws ExecutionException {
+	public void callablex() throws ExecutionException
+	{
 
 		Cache<String, String> cache = CacheBuilder.newBuilder()
 				.maximumSize(1000).build();
 
-		String result = cache.get("key", new Callable<String>() {
-			public String call() {
+		String result = cache.get("key", new Callable<String>()
+		{
+			public String call()
+			{
 				return "result";
 			}
 		});
@@ -83,15 +89,20 @@ public class Tests {
 	 * 
 	 * @throws ExecutionException
 	 */
-
-	public void capacity() {
+	@Test
+	public void capacity()
+	{
 		LoadingCache<String, String> graphs = CacheBuilder.newBuilder()
-				.maximumWeight(100000).weigher(new Weigher<String, String>() {
-					public int weigh(String k, String g) {
+				.maximumWeight(100000).weigher(new Weigher<String, String>()
+				{
+					public int weigh(String k, String g)
+					{
 						return 100;
 					}
-				}).build(new CacheLoader<String, String>() {
-					public String load(String key) { // no checked exception
+				}).build(new CacheLoader<String, String>()
+				{
+					public String load(String key)
+					{ // no checked exception
 						// return createExpensiveGraph(key);
 						return "xxxx";
 					}
