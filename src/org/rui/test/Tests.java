@@ -37,10 +37,16 @@ public class Tests
 				.maximumSize(1000).build(new CacheLoader<String, String>()
 				{
 					@Override
-					public String load(String arg0) throws Exception
+					public String load(String key) throws Exception
 					{
-						return "get-if-absent-compute";
-						// return createExpensiveGraph("key");
+						System.out.println("key:"+key);
+						if("key".equals(key)){
+							return "key return result";
+						}else{
+							return "get-if-absent-compute";
+						}
+						
+						
 					}
 
 				});
@@ -51,7 +57,7 @@ public class Tests
 		} catch (ExecutionException e) {
 			e.printStackTrace();
 		}
-		// resultVal = graphs.getUnchecked("key");
+		
 		System.out.println(resultVal);
 	}
 
