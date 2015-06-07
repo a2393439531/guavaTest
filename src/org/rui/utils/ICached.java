@@ -4,7 +4,6 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 
 import com.google.common.cache.Cache;
-import com.google.common.cache.CacheStats;
 
 /**
  * guava cached 共公接口
