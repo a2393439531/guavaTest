@@ -1,0 +1,154 @@
+INFO - onRemoval ... , notification: <4=4_4>
+INFO - onRemoval ... , notification: <1=1_1>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=29, missCount=11, loadSuccessCount=9, loadExceptionCount=0, totalLoadTime=32626914, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=3_3, 8=8_8, 2=2_2, 0=0_0, 1=reload, 7=7_7, 4=reload}>
+INFO - onRemoval ... , notification: <1=reload>
+INFO - onRemoval ... , notification: <7=7_7>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=69, missCount=11, loadSuccessCount=13, loadExceptionCount=0, totalLoadTime=34282823, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=3_3, 8=8_8, 2=2_2, 0=0_0, 1=reload, 7=reload, 4=reload, 6=6_6}>
+INFO - onRemoval ... , notification: <0=0_0>
+INFO - onRemoval ... , notification: <8=8_8>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <3=3_3>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=109, missCount=11, loadSuccessCount=17, loadExceptionCount=0, totalLoadTime=36470622, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 0=reload, 1=reload, 7=reload, 4=reload, 6=6_6}>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <2=2_2>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=149, missCount=11, loadSuccessCount=21, loadExceptionCount=0, totalLoadTime=38412556, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 0=reload, 1=reload, 7=reload, 4=reload, 6=6_6}>
+INFO - onRemoval ... , notification: <1=reload>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=189, missCount=11, loadSuccessCount=25, loadExceptionCount=0, totalLoadTime=40152354, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=9_9, 0=reload, 1=reload, 7=reload, 4=reload, 6=6_6}>
+INFO - onRemoval ... , notification: <6=6_6>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - onRemoval ... , notification: <1=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=229, missCount=11, loadSuccessCount=29, loadExceptionCount=0, totalLoadTime=42407978, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=9_9, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=5_5}>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <5=5_5>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=269, missCount=11, loadSuccessCount=33, loadExceptionCount=0, totalLoadTime=45222713, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=9_9, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=309, missCount=11, loadSuccessCount=37, loadExceptionCount=0, totalLoadTime=47799168, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=9_9, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <9=9_9>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=349, missCount=11, loadSuccessCount=40, loadExceptionCount=0, totalLoadTime=51674558, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <2=2_2>
+INFO - onRemoval ... , notification: <9=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=389, missCount=11, loadSuccessCount=44, loadExceptionCount=0, totalLoadTime=69285835, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=429, missCount=11, loadSuccessCount=48, loadExceptionCount=0, totalLoadTime=75391864, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <2=2_2>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=469, missCount=11, loadSuccessCount=52, loadExceptionCount=0, totalLoadTime=76589955, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <1=reload>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=509, missCount=11, loadSuccessCount=56, loadExceptionCount=0, totalLoadTime=77998660, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - onRemoval ... , notification: <9=reload>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - onRemoval ... , notification: <9=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=549, missCount=11, loadSuccessCount=60, loadExceptionCount=0, totalLoadTime=79576928, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <1=reload>
+INFO - onRemoval ... , notification: <2=2_2>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=589, missCount=11, loadSuccessCount=64, loadExceptionCount=0, totalLoadTime=80932982, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=629, missCount=11, loadSuccessCount=68, loadExceptionCount=0, totalLoadTime=82438963, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - onRemoval ... , notification: <1=reload>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=669, missCount=11, loadSuccessCount=72, loadExceptionCount=0, totalLoadTime=84244355, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=709, missCount=11, loadSuccessCount=76, loadExceptionCount=0, totalLoadTime=85662433, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <9=reload>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=749, missCount=11, loadSuccessCount=80, loadExceptionCount=0, totalLoadTime=87149226, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=789, missCount=11, loadSuccessCount=84, loadExceptionCount=0, totalLoadTime=88824323, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=829, missCount=11, loadSuccessCount=88, loadExceptionCount=0, totalLoadTime=91691710, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - onRemoval ... , notification: <2=2_2>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=869, missCount=11, loadSuccessCount=92, loadExceptionCount=0, totalLoadTime=92844735, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <9=reload>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - onRemoval ... , notification: <2=2_2>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=909, missCount=11, loadSuccessCount=96, loadExceptionCount=0, totalLoadTime=94131177, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <1=reload>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=949, missCount=11, loadSuccessCount=100, loadExceptionCount=0, totalLoadTime=95526050, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <5=reload>
+INFO - onRemoval ... , notification: <8=reload>
+INFO - onRemoval ... , notification: <4=reload>
+INFO - onRemoval ... , notification: <1=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=989, missCount=11, loadSuccessCount=104, loadExceptionCount=0, totalLoadTime=96775456, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - onRemoval ... , notification: <0=reload>
+INFO - onRemoval ... , notification: <6=reload>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - loadingCache.stats().toString() is : <CacheStats{hitCount=1029, missCount=11, loadSuccessCount=108, loadExceptionCount=0, totalLoadTime=98411732, evictionCount=0}>
+INFO - loadingCache.asMap().toString() is : <{3=reload, 8=reload, 2=2_2, 9=reload, 0=reload, 1=reload, 7=reload, 4=reload, 6=reload, 5=reload}>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - onRemoval ... , notification: <3=reload>
+INFO - onRemoval ... , notification: <7=reload>
+INFO - onRemoval ... , notification: <3=reload>
