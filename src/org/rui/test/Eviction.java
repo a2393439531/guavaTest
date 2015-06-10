@@ -14,18 +14,18 @@ import com.google.common.cache.RemovalNotification;
 import com.google.common.cache.Weigher;
 
 /**
- * cacheµÄ²ÎÊıËµÃ÷£º
+ * cacheçš„å‚æ•°è¯´æ˜ï¼š
  * 
- * ¡¡¡¡»ØÊÕµÄ²ÎÊı£º ¡¡¡¡1. ´óĞ¡µÄÉèÖÃ£ºCacheBuilder.maximumSize(long)
- * CacheBuilder.weigher(Weigher) CacheBuilder.maxumumWeigher(long) ¡¡¡¡2.
- * Ê±¼ä£ºexpireAfterAccess(long, TimeUnit) expireAfterWrite(long, TimeUnit) ¡¡¡¡3.
- * ÒıÓÃ£ºCacheBuilder.weakKeys() CacheBuilder.weakValues()
- * CacheBuilder.softValues() ¡¡¡¡4. Ã÷È·µÄÉ¾³ı£ºinvalidate(key) invalidateAll(keys)
- * invalidateAll() ¡¡¡¡5. É¾³ı¼àÌıÆ÷£ºCacheBuilder.removalListener(RemovalListener) ¡¡¡¡
+ * ã€€ã€€å›æ”¶çš„å‚æ•°ï¼š ã€€ã€€1. å¤§å°çš„è®¾ç½®ï¼šCacheBuilder.maximumSize(long)
+ * CacheBuilder.weigher(Weigher) CacheBuilder.maxumumWeigher(long) ã€€ã€€2.
+ * æ—¶é—´ï¼šexpireAfterAccess(long, TimeUnit) expireAfterWrite(long, TimeUnit) ã€€ã€€3.
+ * å¼•ç”¨ï¼šCacheBuilder.weakKeys() CacheBuilder.weakValues()
+ * CacheBuilder.softValues() ã€€ã€€4. æ˜ç¡®çš„åˆ é™¤ï¼šinvalidate(key) invalidateAll(keys)
+ * invalidateAll() ã€€ã€€5. åˆ é™¤ç›‘å¬å™¨ï¼šCacheBuilder.removalListener(RemovalListener) ã€€ã€€
  * 
- * ¡¡¡¡refresh»úÖÆ£º ¡¡¡¡1. LoadingCache.refresh(K) ÔÚÉú³ÉĞÂµÄvalueµÄÊ±ºò£¬¾ÉµÄvalueÒÀÈ»»á±»Ê¹ÓÃ¡£ ¡¡¡¡2.
- * CacheLoader.reload(K, V) Éú³ÉĞÂµÄvalue¹ı³ÌÖĞÔÊĞíÊ¹ÓÃ¾ÉµÄvalue ¡¡¡¡3.
- * CacheBuilder.refreshAfterWrite(long, TimeUnit) ×Ô¶¯Ë¢ĞÂcache
+ * ã€€ã€€refreshæœºåˆ¶ï¼š ã€€ã€€1. LoadingCache.refresh(K) åœ¨ç”Ÿæˆæ–°çš„valueçš„æ—¶å€™ï¼Œæ—§çš„valueä¾ç„¶ä¼šè¢«ä½¿ç”¨ã€‚ ã€€ã€€2.
+ * CacheLoader.reload(K, V) ç”Ÿæˆæ–°çš„valueè¿‡ç¨‹ä¸­å…è®¸ä½¿ç”¨æ—§çš„value ã€€ã€€3.
+ * CacheBuilder.refreshAfterWrite(long, TimeUnit) è‡ªåŠ¨åˆ·æ–°cache
  *
  *
  */
@@ -33,13 +33,13 @@ public class Eviction
 {
 
 	/**
-	 * »ùÓÚÈİÁ¿µÄ»ØÊÕ
+	 * åŸºäºå®¹é‡çš„å›æ”¶
 	 *
 	 *
-	 * maximumSize(1) »º´æ½«³¢ÊÔ»ØÊÕ×î½üÃ»ÓĞÊ¹ÓÃ»ò×ÜÌåÉÏºÜÉÙÊ¹ÓÃµÄ»º´æÏî
+	 * maximumSize(1) ç¼“å­˜å°†å°è¯•å›æ”¶æœ€è¿‘æ²¡æœ‰ä½¿ç”¨æˆ–æ€»ä½“ä¸Šå¾ˆå°‘ä½¿ç”¨çš„ç¼“å­˜é¡¹
 	 * 
-	 * ²»Í¬µÄ»º´æÏîÓĞ²»Í¬µÄ¡°È¨ÖØ¡±£¨weights£©¡ª¡ªÀıÈç£¬Èç¹ûÄãµÄ»º´æÖµ
-	 * £¬Õ¼¾İÍêÈ«²»Í¬µÄÄÚ´æ¿Õ¼ä£¬Äã¿ÉÒÔÊ¹ÓÃCacheBuilder.weigher(Weigher)Ö¸¶¨Ò»¸öÈ¨ÖØº¯Êı
+	 * ä¸åŒçš„ç¼“å­˜é¡¹æœ‰ä¸åŒçš„â€œæƒé‡â€ï¼ˆweightsï¼‰â€”â€”ä¾‹å¦‚ï¼Œå¦‚æœä½ çš„ç¼“å­˜å€¼
+	 * ï¼Œå æ®å®Œå…¨ä¸åŒçš„å†…å­˜ç©ºé—´ï¼Œä½ å¯ä»¥ä½¿ç”¨CacheBuilder.weigher(Weigher)æŒ‡å®šä¸€ä¸ªæƒé‡å‡½æ•°
 	 * 
 	 */
 
@@ -60,7 +60,7 @@ public class Eviction
 					@Override
 					public void onRemoval(RemovalNotification<String, User2> rn)
 					{
-						System.out.println(rn.getKey() + "==±»ÒÆ³ı");
+						System.out.println(rn.getKey() + "==è¢«ç§»é™¤");
 					}
 
 				}).build();
@@ -100,15 +100,15 @@ public class Eviction
 	/**
 	 * 
 	 * 
-	 * ¶¨Ê±»ØÊÕ£¨Timed Eviction£© expireAfterAccess(long,
-	 * TimeUnit)£º»º´æÏîÔÚ¸ø¶¨Ê±¼äÄÚÃ»ÓĞ±»¶Á/Ğ´·ÃÎÊ£¬Ôò»ØÊÕ¡£Çë×¢ÒâÕâÖÖ»º´æµÄ»ØÊÕË³ĞòºÍ»ùÓÚ´óĞ¡»ØÊÕÒ»Ñù¡£
+	 * å®šæ—¶å›æ”¶ï¼ˆTimed Evictionï¼‰ expireAfterAccess(long,
+	 * TimeUnit)ï¼šç¼“å­˜é¡¹åœ¨ç»™å®šæ—¶é—´å†…æ²¡æœ‰è¢«è¯»/å†™è®¿é—®ï¼Œåˆ™å›æ”¶ã€‚è¯·æ³¨æ„è¿™ç§ç¼“å­˜çš„å›æ”¶é¡ºåºå’ŒåŸºäºå¤§å°å›æ”¶ä¸€æ ·ã€‚
 	 * expireAfterWrite(long,
-	 * TimeUnit)£º»º´æÏîÔÚ¸ø¶¨Ê±¼äÄÚÃ»ÓĞ±»Ğ´·ÃÎÊ£¨´´½¨»ò¸²¸Ç£©£¬Ôò»ØÊÕ¡£Èç¹ûÈÏÎª»º´æÊı¾İ×ÜÊÇÔÚ¹Ì¶¨Ê±ºòºó±äµÃ³Â¾É²»¿ÉÓÃ£¬ÕâÖÖ»ØÊÕ·½Ê½ÊÇ¿ÉÈ¡µÄ¡£
+	 * TimeUnit)ï¼šç¼“å­˜é¡¹åœ¨ç»™å®šæ—¶é—´å†…æ²¡æœ‰è¢«å†™è®¿é—®ï¼ˆåˆ›å»ºæˆ–è¦†ç›–ï¼‰ï¼Œåˆ™å›æ”¶ã€‚å¦‚æœè®¤ä¸ºç¼“å­˜æ•°æ®æ€»æ˜¯åœ¨å›ºå®šæ—¶å€™åå˜å¾—é™ˆæ—§ä¸å¯ç”¨ï¼Œè¿™ç§å›æ”¶æ–¹å¼æ˜¯å¯å–çš„ã€‚
 	 * 
 	 * 
 	 * 
-	 * // .expireAfterWrite(5, TimeUnit.SECONDS)//¸ø¶¨Ê±¼äÄÚÃ»ÓĞĞ´·ÃÎÊ£¬Ôò»ØÊÕ¡£ 27 //
-	 * .expireAfterAccess(3, TimeUnit.SECONDS)// »º´æ¹ıÆÚÊ±¼äÎª3Ãë
+	 * // .expireAfterWrite(5, TimeUnit.SECONDS)//ç»™å®šæ—¶é—´å†…æ²¡æœ‰å†™è®¿é—®ï¼Œåˆ™å›æ”¶ã€‚ 27 //
+	 * .expireAfterAccess(3, TimeUnit.SECONDS)// ç¼“å­˜è¿‡æœŸæ—¶é—´ä¸º3ç§’
 	 * 
 	 * @param args
 	 */
@@ -122,7 +122,7 @@ public class Eviction
 				public void onRemoval(RemovalNotification<String, User2> rn)
 				{
 					System.out.println("Cause:" + rn.getCause() + " k: "
-							+ rn.getKey() + " v :" + rn.getValue() + "==±»ÒÆ³ı");
+							+ rn.getKey() + " v :" + rn.getValue() + "==è¢«ç§»é™¤");
 				}
 
 			}).build();
@@ -189,12 +189,12 @@ public class Eviction
 	}
 
 	/**
-	 * ÏÔÊ½Çå³ı
+	 * æ˜¾å¼æ¸…é™¤
 	 * 
-	 * ÈÎºÎÊ±ºò£¬Äã¶¼¿ÉÒÔÏÔÊ½µØÇå³ı»º´æÏî£¬¶ø²»ÊÇµÈµ½Ëü±»»ØÊÕ£º
+	 * ä»»ä½•æ—¶å€™ï¼Œä½ éƒ½å¯ä»¥æ˜¾å¼åœ°æ¸…é™¤ç¼“å­˜é¡¹ï¼Œè€Œä¸æ˜¯ç­‰åˆ°å®ƒè¢«å›æ”¶ï¼š
 	 * 
-	 * ¸ö±ğÇå³ı£ºCache.invalidate(key) ÅúÁ¿Çå³ı£ºCache.invalidateAll(keys)
-	 * Çå³ıËùÓĞ»º´æÏî£ºCache.invalidateAll()
+	 * ä¸ªåˆ«æ¸…é™¤ï¼šCache.invalidate(key) æ‰¹é‡æ¸…é™¤ï¼šCache.invalidateAll(keys)
+	 * æ¸…é™¤æ‰€æœ‰ç¼“å­˜é¡¹ï¼šCache.invalidateAll()
 	 * 
 	 * @param args
 	 */
@@ -206,7 +206,7 @@ public class Eviction
 				public void onRemoval(RemovalNotification<String, User2> rn)
 				{
 					System.out.println("Cause:" + rn.getCause() + " k: "
-							+ rn.getKey() + " v :" + rn.getValue() + "==±»ÒÆ³ı");
+							+ rn.getKey() + " v :" + rn.getValue() + "==è¢«ç§»é™¤");
 				}
 
 			}).build();

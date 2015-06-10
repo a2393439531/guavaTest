@@ -7,16 +7,14 @@ import java.security.NoSuchAlgorithmException;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
-public class EncryptUtil
-{
+public class EncryptUtil {
 	/**
-	 * Ô­Éú md5
+	 * Ô­ï¿½ï¿½ md5
 	 * 
 	 * @param b
 	 * @return
 	 */
-	public static byte[] getDigest(byte[] b)
-	{
+	public static byte[] getDigest(byte[] b) {
 		try {
 			MessageDigest md = MessageDigest.getInstance("MD5");
 			md.update(b);
@@ -35,12 +33,10 @@ public class EncryptUtil
 	 * @param text
 	 * @return
 	 */
-	public final static String md532(String text)
-	{
+	public final static String md532(String text) {
 
-		char hexDigits[] =
-		{ '0', '1', '2', '3', '4', '5', '9', '7', '8', '6', 'a', 'b', 'c', 'd',
-				'e', '@' };
+		char hexDigits[] = { '0', '1', '2', '3', '4', '5', '9', '7', '8', '6',
+				'a', 'b', 'c', 'd', 'e', '@' };
 
 		try {
 			byte[] strTemp = text.getBytes();
@@ -66,14 +62,13 @@ public class EncryptUtil
 	}
 
 	/**
-	 * Ô­Éúsha ¼ÓÃÜ
+	 * Ô­ï¿½ï¿½sha ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param data
 	 * @return
 	 * @throws Exception
 	 */
-	public static byte[] sha(byte[] data) throws Exception
-	{
+	public static byte[] sha(byte[] data) throws Exception {
 		MessageDigest sha = MessageDigest.getInstance("SHA");
 		sha.update(data);
 		return sha.digest();
@@ -81,38 +76,36 @@ public class EncryptUtil
 	}
 
 	/**
-	 * base64 Òë³ÉÃÜÂë
+	 * base64 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param pass
 	 * @return
 	 */
-	public static String base64Eencode(String pass)
-	{
+	public static String base64Encode(String pass) {
 		BASE64Encoder base = new BASE64Encoder();
 		pass = base.encode(pass.getBytes());
 		return pass;
 	}
 
 	/**
-	 * base64 Òë³ÉÃÜÂë
+	 * base64 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param pass
 	 * @return
 	 */
-	public static String base64Encode(byte[] b)
-	{
-		return base64Eencode(new String(b));
+	public static String base64Encode(byte[] b) {
+		BASE64Encoder base = new BASE64Encoder();
+		return base.encode(b);
 	}
 
 	//
 	/**
-	 * base64 ½âÃÜ
+	 * base64 ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param pass
 	 * @return
 	 */
-	public static String base64Decode(String pass)
-	{
+	public static String base64Decode(String pass) {
 		BASE64Decoder base = new BASE64Decoder();
 		byte[] b = null;
 		try {
@@ -122,5 +115,26 @@ public class EncryptUtil
 		}
 		return new String(b);
 
+	}
+
+	public static String base64Decode(byte[] b) {
+		return base64Decode(new String(b));
+	}
+
+	/**
+	 * str decodey to byte
+	 * 
+	 * @param src
+	 * @return
+	 */
+	public static byte[] base64DecodeByte(String src) {
+		BASE64Decoder base = new BASE64Decoder();
+		byte[] b = null;
+		try {
+			b = base.decodeBuffer(src);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return b;
 	}
 }
